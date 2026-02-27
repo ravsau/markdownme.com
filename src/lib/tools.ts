@@ -45,6 +45,17 @@ export const tools: Tool[] = [
     icon: "FileEdit",
   },
   {
+    slug: "wysiwyg-editor",
+    name: "WYSIWYG Markdown Editor",
+    description:
+      "Rich text WYSIWYG editor that outputs clean Markdown. Free online visual Markdown editor.",
+    longDescription:
+      "Write using a familiar rich text toolbar (bold, italic, headings, lists, links) and get clean Markdown output. Perfect for users who prefer visual editing over writing raw Markdown syntax.",
+    keywords: ["wysiwyg markdown editor", "visual markdown editor", "rich text to markdown", "wysiwyg to markdown"],
+    category: "converters",
+    icon: "PenLine",
+  },
+  {
     slug: "markdown-to-html",
     name: "Markdown to HTML",
     description:
@@ -421,17 +432,6 @@ export const tools: Tool[] = [
     keywords: ["regex find replace", "markdown find replace", "regex search", "text find replace"],
     category: "utilities",
     icon: "Search",
-  },
-  {
-    slug: "wysiwyg-editor",
-    name: "WYSIWYG Markdown Editor",
-    description:
-      "Rich text WYSIWYG editor that outputs clean Markdown. Free online visual Markdown editor.",
-    longDescription:
-      "Write using a familiar rich text toolbar (bold, italic, headings, lists, links) and get clean Markdown output. Perfect for users who prefer visual editing over writing raw Markdown syntax.",
-    keywords: ["wysiwyg markdown editor", "visual markdown editor", "rich text to markdown", "wysiwyg to markdown"],
-    category: "utilities",
-    icon: "PenLine",
   },
   {
     slug: "frontmatter-editor",
