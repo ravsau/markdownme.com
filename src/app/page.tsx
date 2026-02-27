@@ -7,23 +7,12 @@ import {
   getToolsByCategory,
 } from "@/lib/tools";
 import {
-  FileEdit,
-  FileCode,
-  FileText,
-  Table,
-  Braces,
-  Type,
-  Grid3x3,
-  List,
-  BookOpen,
-  Hash,
-  LetterText,
-  Link as LinkIcon,
-  Heading,
-  GitCompareArrows,
-  AlignJustify,
-  FileDown,
-  ArrowRight,
+  FileEdit, FileCode, FileText, Table, Braces, Type, Grid3x3, List,
+  BookOpen, Hash, LetterText, Link as LinkIcon, Heading, GitCompareArrows,
+  AlignJustify, FileDown, ArrowRight, MessageSquare, Code, GraduationCap,
+  Ticket, Award, ClipboardList, Scale, Subscript, ChevronsUpDown, Users,
+ Unlink, BookCheck, Image, SearchCheck, Sparkles, ArrowUpDown,
+  Replace, BookMarked, Search, Settings, PenLine,
 } from "lucide-react";
 import type { Tool } from "@/lib/tools";
 
@@ -44,6 +33,27 @@ const iconMap: Record<string, React.ReactNode> = {
   GitCompareArrows: <GitCompareArrows className="h-5 w-5" />,
   AlignJustify: <AlignJustify className="h-5 w-5" />,
   FileDown: <FileDown className="h-5 w-5" />,
+  MessageSquare: <MessageSquare className="h-5 w-5" />,
+  Code: <Code className="h-5 w-5" />,
+  GraduationCap: <GraduationCap className="h-5 w-5" />,
+  Ticket: <Ticket className="h-5 w-5" />,
+  Award: <Award className="h-5 w-5" />,
+  ClipboardList: <ClipboardList className="h-5 w-5" />,
+  Scale: <Scale className="h-5 w-5" />,
+  Subscript: <Subscript className="h-5 w-5" />,
+  ChevronsUpDown: <ChevronsUpDown className="h-5 w-5" />,
+  Users: <Users className="h-5 w-5" />,
+  Unlink: <Unlink className="h-5 w-5" />,
+  BookCheck: <BookCheck className="h-5 w-5" />,
+  Image: <Image className="h-5 w-5" />,
+  SearchCheck: <SearchCheck className="h-5 w-5" />,
+  Sparkles: <Sparkles className="h-5 w-5" />,
+  ArrowUpDown: <ArrowUpDown className="h-5 w-5" />,
+  Replace: <Replace className="h-5 w-5" />,
+  BookMarked: <BookMarked className="h-5 w-5" />,
+  Search: <Search className="h-5 w-5" />,
+  Settings: <Settings className="h-5 w-5" />,
+  PenLine: <PenLine className="h-5 w-5" />,
 };
 
 function ToolCard({ tool }: { tool: Tool }) {
@@ -83,16 +93,10 @@ export default function Home() {
             No signup. No AI. Everything runs in your browser.
           </p>
           <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
-            <Link
-              href="/tools/markdown-editor"
-              className="tool-btn text-base px-6 py-3"
-            >
+            <Link href="/tools/markdown-editor" className="tool-btn text-base px-6 py-3">
               Open Editor
             </Link>
-            <Link
-              href="#tools"
-              className="tool-btn-secondary text-base px-6 py-3"
-            >
+            <Link href="#tools" className="tool-btn-secondary text-base px-6 py-3">
               Browse Tools
             </Link>
           </div>
@@ -133,30 +137,21 @@ export default function Home() {
           </h2>
           <div className="grid grid-cols-1 gap-8 sm:grid-cols-3">
             <div>
-              <h3 className="mb-2 font-semibold text-gray-900 dark:text-white">
-                100% Browser-Based
-              </h3>
+              <h3 className="mb-2 font-semibold text-gray-900 dark:text-white">100% Browser-Based</h3>
               <p className="text-sm text-gray-600 dark:text-gray-400">
-                Every tool runs entirely in your browser. Your data never leaves
-                your device. No server processing, no uploads, no tracking.
+                Every tool runs entirely in your browser. Your data never leaves your device. No server processing, no uploads, no tracking.
               </p>
             </div>
             <div>
-              <h3 className="mb-2 font-semibold text-gray-900 dark:text-white">
-                No Signup Required
-              </h3>
+              <h3 className="mb-2 font-semibold text-gray-900 dark:text-white">No Signup Required</h3>
               <p className="text-sm text-gray-600 dark:text-gray-400">
-                Use any tool instantly. No accounts, no email verification, no
-                paywalls. Just open a tool and start working.
+                Use any tool instantly. No accounts, no email verification, no paywalls. Just open a tool and start working.
               </p>
             </div>
             <div>
-              <h3 className="mb-2 font-semibold text-gray-900 dark:text-white">
-                GitHub Flavored Markdown
-              </h3>
+              <h3 className="mb-2 font-semibold text-gray-900 dark:text-white">GitHub Flavored Markdown</h3>
               <p className="text-sm text-gray-600 dark:text-gray-400">
-                Full support for GFM including tables, task lists, strikethrough,
-                footnotes, and syntax-highlighted code blocks.
+                Full support for GFM including tables, task lists, strikethrough, footnotes, and syntax-highlighted code blocks.
               </p>
             </div>
           </div>

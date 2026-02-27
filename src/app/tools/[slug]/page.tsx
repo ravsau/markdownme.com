@@ -5,15 +5,15 @@ import { tools, getToolBySlug } from "@/lib/tools";
 import { ToolLayout } from "@/components/ToolLayout";
 
 const toolComponents: Record<string, React.ComponentType> = {
+  // Existing
   "markdown-editor": dynamic(() => import("@/components/tools/MarkdownEditor")),
   "markdown-to-html": dynamic(() => import("@/components/tools/MarkdownToHtml")),
   "html-to-markdown": dynamic(() => import("@/components/tools/HtmlToMarkdown")),
   "csv-to-markdown": dynamic(() => import("@/components/tools/CsvToMarkdown")),
   "json-to-markdown": dynamic(() => import("@/components/tools/JsonToMarkdown")),
   "markdown-to-text": dynamic(() => import("@/components/tools/MarkdownToText")),
-  "markdown-table-generator": dynamic(
-    () => import("@/components/tools/MarkdownTableGenerator")
-  ),
+  "markdown-to-pdf": dynamic(() => import("@/components/tools/MarkdownToPdf")),
+  "markdown-table-generator": dynamic(() => import("@/components/tools/MarkdownTableGenerator")),
   "toc-generator": dynamic(() => import("@/components/tools/TocGenerator")),
   "readme-generator": dynamic(() => import("@/components/tools/ReadmeGenerator")),
   "slug-generator": dynamic(() => import("@/components/tools/SlugGenerator")),
@@ -21,10 +21,33 @@ const toolComponents: Record<string, React.ComponentType> = {
   "link-extractor": dynamic(() => import("@/components/tools/LinkExtractor")),
   "heading-extractor": dynamic(() => import("@/components/tools/HeadingExtractor")),
   "markdown-diff": dynamic(() => import("@/components/tools/MarkdownDiff")),
-  "markdown-table-formatter": dynamic(
-    () => import("@/components/tools/MarkdownTableFormatter")
-  ),
-  "markdown-to-pdf": dynamic(() => import("@/components/tools/MarkdownToPdf")),
+  "markdown-table-formatter": dynamic(() => import("@/components/tools/MarkdownTableFormatter")),
+  // New converters
+  "markdown-to-slack": dynamic(() => import("@/components/tools/MarkdownToSlack")),
+  "markdown-to-bbcode": dynamic(() => import("@/components/tools/MarkdownToBbcode")),
+  "markdown-to-latex": dynamic(() => import("@/components/tools/MarkdownToLatex")),
+  "markdown-to-jira": dynamic(() => import("@/components/tools/MarkdownToJira")),
+  // New generators
+  "badge-generator": dynamic(() => import("@/components/tools/BadgeGenerator")),
+  "changelog-generator": dynamic(() => import("@/components/tools/ChangelogGenerator")),
+  "license-generator": dynamic(() => import("@/components/tools/LicenseGenerator")),
+  "footnote-generator": dynamic(() => import("@/components/tools/FootnoteGenerator")),
+  "collapsible-generator": dynamic(() => import("@/components/tools/CollapsibleGenerator")),
+  "contributing-generator": dynamic(() => import("@/components/tools/ContributingGenerator")),
+  // New analysis
+  "broken-link-checker": dynamic(() => import("@/components/tools/BrokenLinkChecker")),
+  "readability-score": dynamic(() => import("@/components/tools/ReadabilityScore")),
+  "image-extractor": dynamic(() => import("@/components/tools/ImageExtractor")),
+  "markdown-linter": dynamic(() => import("@/components/tools/MarkdownLinter")),
+  // New formatters
+  "markdown-prettifier": dynamic(() => import("@/components/tools/MarkdownPrettifier")),
+  "list-sorter": dynamic(() => import("@/components/tools/ListSorter")),
+  "url-reference-converter": dynamic(() => import("@/components/tools/UrlReferenceConverter")),
+  // Utilities
+  "markdown-cheat-sheet": dynamic(() => import("@/components/tools/MarkdownCheatSheet")),
+  "regex-find-replace": dynamic(() => import("@/components/tools/RegexFindReplace")),
+  "frontmatter-editor": dynamic(() => import("@/components/tools/FrontmatterEditor")),
+  "wysiwyg-editor": dynamic(() => import("@/components/tools/WysiwygEditor")),
 };
 
 export function generateStaticParams() {
