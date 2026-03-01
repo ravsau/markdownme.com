@@ -12,7 +12,7 @@ import {
   AlignJustify, FileDown, ArrowRight, MessageSquare, Code, GraduationCap,
   Ticket, Award, ClipboardList, Scale, Subscript, ChevronsUpDown, Users,
  Unlink, BookCheck, Image, SearchCheck, Sparkles, ArrowUpDown,
-  Replace, BookMarked, Search, Settings, PenLine,
+  Replace, BookMarked, Search, Settings, PenLine, Megaphone, Twitter, Eraser,
 } from "lucide-react";
 import type { Tool } from "@/lib/tools";
 
@@ -54,6 +54,9 @@ const iconMap: Record<string, React.ReactNode> = {
   Search: <Search className="h-5 w-5" />,
   Settings: <Settings className="h-5 w-5" />,
   PenLine: <PenLine className="h-5 w-5" />,
+  Megaphone: <Megaphone className="h-5 w-5" />,
+  Twitter: <Twitter className="h-5 w-5" />,
+  Eraser: <Eraser className="h-5 w-5" />,
 };
 
 function ToolCard({ tool }: { tool: Tool }) {

@@ -165,6 +165,39 @@ export const tools: Tool[] = [
     category: "converters",
     icon: "Ticket",
   },
+  {
+    slug: "markdown-to-linkedin",
+    name: "Markdown to LinkedIn Post",
+    description:
+      "Convert Markdown to a LinkedIn-ready post with proper formatting. Free online Markdown to LinkedIn formatter.",
+    longDescription:
+      "Paste Markdown and get a clean LinkedIn post with bold text, emoji bullets, proper spacing, and character count. Optimized for LinkedIn's 3,000-character limit.",
+    keywords: ["markdown to linkedin", "linkedin post formatter", "linkedin formatting tool", "markdown linkedin converter"],
+    category: "converters",
+    icon: "Megaphone",
+  },
+  {
+    slug: "markdown-to-twitter",
+    name: "Markdown to Twitter/X Thread",
+    description:
+      "Split Markdown into a Twitter/X thread with proper formatting. Free online tweet thread generator.",
+    longDescription:
+      "Paste long-form Markdown and split it into a numbered Twitter/X thread. Each tweet respects the 280-character limit with smart splitting at sentence boundaries.",
+    keywords: ["markdown to twitter", "tweet thread generator", "twitter thread formatter", "split text into tweets"],
+    category: "converters",
+    icon: "Twitter",
+  },
+  {
+    slug: "snippet-cleaner",
+    name: "Markdown Snippet Cleaner",
+    description:
+      "Clean up messy Markdown pasted from Notion, Google Docs, or Slack. Fix smart quotes, bad spacing, and broken formatting.",
+    longDescription:
+      "Fix common issues when pasting content from Notion, Google Docs, Slack, or other sources: smart quotes to straight quotes, non-breaking spaces, zero-width characters, inconsistent line breaks, and broken list formatting.",
+    keywords: ["markdown cleaner", "fix markdown formatting", "clean pasted markdown", "notion to markdown", "fix smart quotes"],
+    category: "formatters",
+    icon: "Eraser",
+  },
   // ── Generators ──
   {
     slug: "markdown-table-generator",

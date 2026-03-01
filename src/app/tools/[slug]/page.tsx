@@ -22,6 +22,9 @@ const toolComponents: Record<string, React.ComponentType> = {
   "heading-extractor": dynamic(() => import("@/components/tools/HeadingExtractor")),
   "markdown-diff": dynamic(() => import("@/components/tools/MarkdownDiff")),
   "markdown-table-formatter": dynamic(() => import("@/components/tools/MarkdownTableFormatter")),
+  "markdown-to-linkedin": dynamic(() => import("@/components/tools/MarkdownToLinkedin")),
+  "markdown-to-twitter": dynamic(() => import("@/components/tools/MarkdownToTwitter")),
+  "snippet-cleaner": dynamic(() => import("@/components/tools/SnippetCleaner")),
   // New converters
   "markdown-to-slack": dynamic(() => import("@/components/tools/MarkdownToSlack")),
   "markdown-to-bbcode": dynamic(() => import("@/components/tools/MarkdownToBbcode")),
